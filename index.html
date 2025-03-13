@@ -6,16 +6,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Ygor - Desenvolvedor front-end</title>
+    <style>
+        body {
+            font-size: 20px !important;
+            line-height: 1.75 !important;
+        }
+
+        #site-navbar-links {
+            font-size: 16px;
+        }
+
+        #site-navbar-links .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.1); 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        #site-navbar-links a:hover {
+            background-color: rgba(255, 255, 255, 0.1); 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease-in-out;
+        }
+    </style>
 </head>
 <body class="bg-body-secondary">
     <div class="container mt-5">
             <nav class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
-                <ul class="nav w-100">
+                <ul id="site-navbar-links" class="nav w-100">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#sobremim">Sobre mim</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="https://github.com/ygordeoliveira">Github</a>
@@ -32,70 +51,77 @@
                 </ul>
             </nav>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5 pt-2">
         <div class="d-flex align-items-center">
-            <!-- Imagem ao lado do título -->
-            <img src="./img/perfil.jpeg" alt="Minha Foto" class="img-fluid rounded-circle me-3 mt-3" style="max-width: 70px;">
-            <h1 style="margin-top: 50px;">Sobre mim</h1>
+            <div>
+                <img src="./img/perfil.jpeg" alt="Minha Foto" class="img-fluid rounded-circle me-3 mt-3" style="max-width: 140px;">
+            </div>
+            <div>
+                <h1 style="margin-top: 50px;" class="display-4 fw-bold">Ygor de Oliveira</h1>
+                <p>Olá, tenho 20 anos!</p>
+            </div>
+
         </div>
 
-        <p class="lead mt-2" id="sobremim">
-            Olá me chamo Ygor, tenho 20 anos!
-            <br>
-            <br>
+        <p class="mt-4 mb-5" id="sobremim">
             Sou um desenvolvedor front-end apaixonado por programação e criação de interfaces intuitivas e responsivas.
             Tenho experiência em HTML, CSS, JavaScript e React, tecnologias que utilizo para desenvolver aplicações e sites modernos e funcionais.
             Meu foco é transformar ideias em experiências digitais fluidas, garantindo performance, acessibilidade e um design responsivo para diferentes dispositivos.
-            <br>
-            <br>
-            Além disso, estou sempre buscando aprimorar minhas habilidades e me manter atualizado com as tendências e boas práticas do desenvolvimento web. Gosto de trabalhar em equipe, colaborar com designers e back-end developers para criar produtos completos e eficientes. Minha paixão pela programação vai além do código – envolve a criação de soluções que realmente fazem a diferença para os usuários.
-        </p>
-        <br>
 
-        <h3 style="margin-bottom: 20px;">Além da programação, gosto de:</h3>
-        <ul>
-            <li><p class="lead">⚽ Futebol</p></li>
-            <li><p class="lead">📘 Ler livros</p></li>
-            <li><p class="lead">🎞️ Assistir filmes</p></li>
-            <li><p class="lead">🎮 Videogame</p></li>
-            <li><p class="lead">✈️ Viajar</p></li>
-            <li><p class="lead" style="margin-bottom: 30px;">🎥 Assistir novela</p></li>
-        </ul>
-        
-        <h3 style="margin-bottom: 20px;">Cursos</h3>
-        <ul>
-            <li class="mb-4"><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" class="fs-5 text-decoration-none">JavaScript Algorithms and Data Structures</a></li>
-            <li class="mb-4"><a href="https://www.freecodecamp.org/learn/front-end-development-libraries/" class="fs-5 text-decoration-none">Front End Development Libraries</a></li>
-            <li class="mb-4"><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" class="fs-5 text-decoration-none">Responsive Web Design</a></li>
-        </ul>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="mb-4 border-bottom border-dark mt-4 ">Formação Acadêmica</h3>
+                <ul class="list-unstyled">
+                    <li class="fs-4 mb-3">- Ensino Médio Completo</li>
+                    <li class="fs-4 mb-4">- Ensino Fundamental Completo</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="mb-3 border-bottom border-dark mt-4">Cursos</h3>
+                <ul>
+                    <li class="mb-4"><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/" class="fs-5 text-decoration-none">JavaScript Algorithms and Data Structures</a></li>
+                    <li class="mb-4"><a href="https://www.freecodecamp.org/learn/front-end-development-libraries/" class="fs-5 text-decoration-none">Front End Development Libraries</a></li>
+                    <li class="mb-4"><a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" class="fs-5 text-decoration-none">Responsive Web Design</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <h3 class="mt-5 mb-3">Skills</h3>
-        <ul class="list-unstyled">
-            <li class="fs-4 mb-3">- HTML</li>
-            <li class="fs-4 mb-3">- CSS</li>
-            <li class="fs-4 mb-3">- React</li>
-            <li class="fs-4 mb-3">- Bootstrap</li>
-            <li class="fs-4 mb-4">- TypeScript</li>
-        </ul>
-    
-        <h3 class="mt-5 mb-3">Formação Acadêmica</h3>
-        <ul class="list-unstyled">
-            <li class="fs-4 mb-3">- Ensino Médio Completo</li>
-            <li class="fs-4 mb-4">- Ensino Fundamental Completo</li>
-        </ul>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h3 class="mt-4 mb-3 mb-3 border-bottom border-dark">Skills</h3>
+                <ul class="list-unstyled">
+                    <li class="fs-4 mb-3">- HTML</li>
+                    <li class="fs-4 mb-3">- CSS</li>
+                    <li class="fs-4 mb-3">- React</li>
+                    <li class="fs-4 mb-3">- Bootstrap</li>
+                    <li class="fs-4 mb-3">- TypeScript</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <h3 class="mt-4 mb-3 border-bottom border-dark">Principais projetos</h3>
+                <ul class="mb-3">
+                    <li class="mb-3"><a href="https://project-car-ygordeoliveira.vercel.app/" class="text-decoration-none fs-4">Projetos de Carros</a></li>
+                    <li class="mb-3"><a href="https://app-notes-rocketseat.vercel.app/" class="text-decoration-none fs-4">Aplicativos de notas</a></li>
+                    <li class="mb-3"><a href="https://javascript-calculator-ygordeoliveira.vercel.app/" class="text-decoration-none fs-4">Calculadora</a></li>
+                    <li class="mb-4"><a href="https://explorer-lab-01-dusky.vercel.app/" class="text-decoration-none fs-4">Rocketpay</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <h3 class="mt-5 mb-3">Principais projetos</h3>
-        <ul class="mb-3">
-            <li class="mb-3"><a href="https://project-car-ygordeoliveira.vercel.app/" class="text-decoration-none fs-4">Projetos de Carros</a></li>
-            <li class="mb-3"><a href="https://app-notes-rocketseat.vercel.app/" class="text-decoration-none fs-4">Aplicativos de notas</a></li>
-            <li class="mb-3"><a href="https://javascript-calculator-ygordeoliveira.vercel.app/" class="text-decoration-none fs-4">Calculadora</a></li>
-            <li class="mb-5"><a href="https://explorer-lab-01-dusky.vercel.app/" class="text-decoration-none fs-4">Rocketpay</a></li>
-        </ul>
+        <h3 class="mb-3 mt-4 border-bottom border-dark">Também gosto de:</h3>
+                <ul class="list-unstyled ms-2">
+                    <li>⚽ Futebol</li>
+                    <li>📘 Ler livros</li>
+                    <li>🎞️ Assistir filmes</li>
+                    <li>🎮 Videogame</li>
+                    <li>✈️ Viajar</li>
+                    <li>🎥 Assistir novela</li>
+                </ul>
     </div>
 
     <footer class="bg-dark text-light text-center py-3">
         <div class="container">
-            <p class="mb-0">&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+            <p class="mb-0">&copy; 2025 Ygor de Oliveira. Todos os direitos reservados.</p>
         </div>
     </footer>
 
